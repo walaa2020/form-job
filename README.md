@@ -1,18 +1,72 @@
-# React + Vite
+# 🧾 Job Application Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Job Application Form** built with **React**, showcasing advanced form handling, validation, file uploads, and state management.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- ✅ Form validation using **React Hook Form** & **Zod**
+- 🧑 Collects personal information:
+  - Full Name
+  - Email
+  - Birthdate
+  - Gender
+- 🛠️ Skill selection using radio buttons
+- 📝 About section with textarea
+- 📄 CV upload
+- 🎥 Video upload
+- 👁️ Preview mode before final submission
+- 🔒 Inputs become read-only in preview mode
+- 🔙 Back & Save workflow
+- 📦 State management using **Redux Toolkit**
+- 🍪 Data persistence using cookies
+- 🎨 Reusable custom UI components
+- 💅 Styled with Tailwind CSS
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🧰 Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- React Hook Form
+- Zod
+- Redux Toolkit
+- Tailwind CSS
+- JavaScript (ES6+)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 How It Works
+
+1. User fills out the job application form
+2. All fields are validated using Zod schema
+3. Clicking **Continue** triggers validation and switches to preview mode
+4. User can go **Back** to edit or **Save** to submit
+5. Submitted data is stored in Redux and cookies
+
+---
+
+## 📂 Validation Rules
+
+- All fields are required except “Work Remotely”
+- CV and Video must be valid files
+- Inline error messages are shown for better UX
+
+---
+
+## 📌 Project Purpose
+
+This project demonstrates:
+- Advanced form validation in React
+- Handling file inputs with react-hook-form
+- Preview-before-submit UX pattern
+- Integration of Redux with form data
+
+---
+
+## 🛠️ Installation & Run
+
+```bash
+npm install
+npm run dev
